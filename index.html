@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src ="index.js"></script>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="out">
+		<div id="calc">
+			<div id="display">
+				<div>
+					<p>
+						
+					</p>
+				</div>
+				<input type="text" pattern="\d*" name="evaluate" value="" autofocus placeholder="0" onkeydown="check(event,this)">
+			</div>
+			<table id="numpad">
+				<tr>
+					<td class="light" onclick="clr()">
+						C
+					</td>
+					<td id="spec" class="light" onclick="change_sign()">
+						<span id="sup">+</span>/<span id="sub">-</span>
+					</td>
+					<td class="light" onclick="exp('%')">
+						%
+					</td>
+					<td class="dark" onclick="exp('/')">
+						&#247
+					</td>
+				</tr>
+				<tr>
+					<td onclick="int('7')">
+						7
+					</td>
+					<td onclick="int('8')">
+						8
+					</td>
+					<td onclick="int('9')">
+						9
+					</td>
+					<td class="dark" onclick="exp('*')">
+						x
+					</td>
+				</tr>
+				<tr>
+					<td onclick="int('4')">
+						4
+					</td>
+					<td onclick="int('5')">
+						5
+					</td>
+					<td onclick="int('6')">
+						6
+					</td>
+					<td class="dark" onclick="exp('-')">
+						-
+					</td>
+				</tr>
+				<tr>
+					<td onclick="int('1')">
+						1
+					</td>
+					<td onclick="int('2')">
+						2
+					</td>
+					<td onclick="int('3')">
+						3
+					</td>
+					<td class="dark" onclick="exp('+')">
+						+
+					</td>
+				</tr>
+				<tr>
+					<td onclick="int('0')">
+						0
+					</td>
+					<td>
+						
+					</td>
+					<td onclick="int('.')">
+						.
+					</td>
+					<td id="submit" onclick="sub()">
+						=
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

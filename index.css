@@ -1,0 +1,134 @@
+html, body{
+	height: 100%;
+}
+*{
+	font-family: 'Trebuchet MS', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#out{
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	top: 10%;
+	text-align: center;
+}
+#calc{
+	display: inline-block;
+	width: 98%;
+	height: 100%;
+	border: 2px solid black;
+}
+#display{
+	height: 25%;
+}
+#display div{
+	height: 35%;
+	position: relative;
+	vertical-align: bottom;
+}
+#display p{
+	/*width: 100%;*/
+	width: 86%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	/*overflow-x:scroll;*/
+	color: #888888;
+	/*overflow-wrap: break-word;*/
+	/*text-overflow: clip;*/
+	text-align: right;
+	margin-right: 7%;
+	margin-left: 7%;	
+}
+#display input{
+	color: #555555;
+	font-size: 3em;
+	text-align: right;
+	outline: none;
+	border: none;
+	width: 86%;
+	padding-left: 7%;
+	padding-right: 7%;
+	display: block;
+	height: 65%;
+	overflow-wrap: break-word;
+	text-overflow: unset;
+	text-decoration: none;
+}
+table,tr,td{
+	border:3px solid black;
+	border-color: #dadada;
+}
+table{
+	z-index: -10;
+	margin-left: -0.1%;
+	height: 75.15%;
+	width: 100.2%;
+	/*display: inline-block;*/
+	/*border: 1px solid black;*/
+	border-collapse: collapse;
+	/*margin: ;*/
+	/*float: left;*/
+	border-spacing: 0px;
+	font-size: 2.5em;
+	color: grey;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+td{
+	width: 25%;
+	cursor: pointer;
+}
+#sup{
+	vertical-align: 25%;
+	font-size: smaller;
+	/*letter-spacing: -10px;*/
+
+}
+#sub{
+	vertical-align: -5%;
+	/*font-size: smaller;*/
+	/*letter-spacing: -10px;*/
+}
+#spec{
+	letter-spacing: -1.5vw;
+}
+.light{
+	background-color: #f5f5f5;
+	box-shadow: 0px 12px 20px -20px #414141 inset;
+}
+.dark{
+	background-color: #3c4c5d;
+	color: white;
+	border-color: #223734;
+	border-right-color: #3c4c5d;
+}
+#submit{
+	background-color: #e6c413;
+	color: white;
+	border-color: #e6c413;
+}
+@media only screen and (min-width: 700px) {
+	#calc{
+		width: 50%;
+	}
+	table{
+		width: 100.1%;
+		margin-left: 0.0%;
+	}
+	#spec{
+		letter-spacing: -0.8vw;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#calc{
+		width: 30%;
+	}
+	table{
+		width: 100.1%;
+		margin-left: 0.0%;
+	}
+	#spec{
+		letter-spacing: -0.4vw;
+	}
+}
