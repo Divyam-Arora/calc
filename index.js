@@ -46,7 +46,7 @@ function check(e, val){
 }
 function check_len(e, val){
 	var key = e.keyCode ? e.keyCode : e.which;
-	if ( key >= 48 && key <= 57 && last_num.length > 10) {
+	if ( key != 8 && last_num.length > 10) {
 		e.preventDefault();
 	}
 }
