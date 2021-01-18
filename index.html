@@ -14,11 +14,10 @@
 		<div id="calc">
 			<div id="display">
 				<div>
-					<p>
-						
-					</p>
+					<textarea id="p" type="text" disabled value="">
+					</textarea>
 				</div>
-				<input type="number"name="evaluate" value="" autofocus placeholder="0" onkeydown="check(event,this)">
+				<input id="inp" type="number"name="evaluate" value="" autofocus placeholder="0" onkeydown="check_len(event,this)" onkeyup="check(event,this)">
 			</div>
 			<table id="numpad">
 				<tr>
