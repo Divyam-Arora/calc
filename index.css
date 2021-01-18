@@ -27,21 +27,28 @@ html, body{
 	position: relative;
 	vertical-align: bottom;
 }
-#display p{
-	/*width: 100%;*/
+#p{
 	width: 86%;
+	display: inline-block;
+	height: 50%;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
-	/*overflow-x:scroll;*/
+	overflow:auto;
 	color: #888888;
-	/*overflow-wrap: break-word;*/
-	/*text-overflow: clip;*/
+	overflow-wrap:break-word;
 	text-align: right;
-	margin-right: 7%;
-	margin-left: 7%;	
+	padding-right: 7%;
+	padding-left: 7%;	
+	resize: none;
 }
-#display input{
+#p:disabled{
+	background-color: transparent;
+	outline: none;
+	text-decoration: none;
+	border: none;
+}
+#inp{
 	color: #555555;
 	font-size: 3em;
 	text-align: right;
@@ -56,15 +63,15 @@ html, body{
 	text-overflow: unset;
 	text-decoration: none;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+#inp::-webkit-outer-spin-button,
+#inp::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] {
+#inp[type=number] {
   -moz-appearance: textfield;
 }
-#display input:disabled{
+#inp:disabled{
 	background-color: transparent;
 }
 table,tr,td{
@@ -76,11 +83,7 @@ table{
 	margin-left: -0.1%;
 	height: 75.15%;
 	width: 100.2%;
-	/*display: inline-block;*/
-	/*border: 1px solid black;*/
 	border-collapse: collapse;
-	/*margin: ;*/
-	/*float: left;*/
 	border-spacing: 0px;
 	font-size: 2.5em;
 	color: grey;
@@ -93,13 +96,10 @@ td{
 #sup{
 	vertical-align: 25%;
 	font-size: smaller;
-	/*letter-spacing: -10px;*/
 
 }
 #sub{
 	vertical-align: -5%;
-	/*font-size: smaller;*/
-	/*letter-spacing: -10px;*/
 }
 #spec{
 	letter-spacing: -1.5vw;
